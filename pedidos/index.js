@@ -48,15 +48,16 @@ const enviar = document.querySelector("#enviar").addEventListener("click", dados
     }
     document.querySelector("#name").value = ""
     document.querySelector("#txt").value = ""
+    addlixeira()
 })
 
 
 
 //deletar pedido
 
-
-const label = document.querySelector(".licon")
-label.addEventListener("click", () => {
+function addlixeira(){
+    const label = document.querySelector(".licon")
+    label.addEventListener("click", () => {
 
     const li = document.querySelectorAll("li")
 
@@ -69,6 +70,8 @@ label.addEventListener("click", () => {
     });
 
 })
+}
+
 
 
 
