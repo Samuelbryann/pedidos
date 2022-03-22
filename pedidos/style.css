@@ -1,0 +1,196 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteiner{
+    height: 75%;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+section{
+    height: 100%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.925);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#s1{
+    border-radius: 6px 0px 0px 6px;
+
+}
+
+#s2{
+    border-radius: 0px 6px 6px 0px;
+
+}
+
+#s1::after{
+    content: "";
+    width: 2px;
+    height: 70%;
+    border-radius: 10px;
+    background-color: rgb(75, 74, 74);
+    position: absolute;
+    left: 50%;
+}
+img {
+    height: 100px;
+}
+
+h1{
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+#area-pedido{
+    min-height: 50px;
+    height: 80px;
+    width: 80%;
+    border-radius: 6px;
+    overflow-y: auto;
+    margin-bottom: 30px;
+    background-color: rgba(43, 43, 43, 0.596);
+    
+
+}
+
+#area-pedido::-webkit-scrollbar{
+    background-color: transparent;
+    width: 4px;
+}
+
+#area-pedido::-webkit-scrollbar-track{
+    background-color: rgb(15, 15, 15);
+    border-radius: 2px;
+}
+
+
+#area-pedido::-webkit-scrollbar-thumb{
+    background-color: rgb(57, 28, 223);
+    border-radius: 2px;
+
+}
+
+
+
+
+
+.block-pedidos{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 98%;
+    background-color:  rgba(220, 214, 252, 0.932);
+    border-bottom: solid 2px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.np{
+    padding: 3px 3px 0px 10px;
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+}
+
+.p-np{
+    font-size: 12px;
+}
+
+.licon{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lixo{
+    height: 20px;
+}
+
+#vazio{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.233);
+    position: relative;
+    left: 49%;
+    top: 40%;
+}
+
+button{
+    height: 8%;
+    width: 70%;
+    border:none;
+    border-radius: 6px;
+    color: whitesmoke;
+    background-color: rgb(57, 28, 223);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(39, 10, 204);
+}
+
+#enviar ion-icon{
+    margin-left: 3px;
+    color: chartreuse;
+}
+
+.labels{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+label{
+    height: 50%;
+    width: 100%;
+    cursor: pointer;
+}
+
+label p{
+    color: whitesmoke;
+    font-size: 12px;
+}
+
+input{
+    width: 100%;
+    height: 55%;
+    background-color: rgba(243, 243, 243, 0.945);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+
