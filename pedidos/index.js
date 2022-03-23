@@ -56,20 +56,19 @@ const enviar = document.querySelector("#enviar").addEventListener("click", dados
 //deletar pedido
 
 function addlixeira(){
-    const label = document.querySelector(".licon")
-    label.addEventListener("click", () => {
 
     const li = document.querySelectorAll("li")
 
     li.forEach( (item, index) => {
 
-        console.log(item)
-        item.remove()
-        
-        
-    });
+        item.addEventListener("click", () => {
 
-})
+            item.remove()
+
+        }) 
+    });
+    
+
 }
 
 
